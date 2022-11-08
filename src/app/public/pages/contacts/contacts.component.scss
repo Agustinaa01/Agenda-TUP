@@ -1,21 +1,54 @@
 body{
     background-color: #E3E5F9;
-    height: 100vh;
+    // height: 100vh;
     width: 100vw; 
+    // justify-content: center ;
+    // margin: -8px;
+    height: calc( 100vh - 148px );
+    overflow-y: auto;
+}
+
+.header{
+    background-color: #d7d7d7;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+}
+
+.arriba{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    // justify-content: center ;
-    margin: -8px;
+    //justify-content: space-between;
 }
+
+.arriba-center{
+    display: flex;
+    flex: 1 1 10%;
+    justify-content: flex-end;
+    //align-items: center;
+}
+
+.arriba-right{
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-end;
+}
+
+h1{
+    // position: absolute;
+    // left: 644px;
+    // top: 22px;
+    // text-align: center;
+    margin: 0;
+}
+
 .submit{
+    //position: relative;
+    //left: 0;
     background-color: #7C88FF;
     width: 230px;
     height: 25px;
     color: #FFFFFF;
-    position: fixed;
-    top: 6.5%;
-    left: 81.4%;
     font-size: 15px;
     border-radius: 10px;
     border: none;
@@ -29,13 +62,9 @@ body{
 }
 
 .buscar{
-    background-color: #FFFFFF;
-    width: 1450px;
+    background-color: #ffffff;
+    width: -webkit-fill-available;
     height: 35px;
-    color: #0000;
-    position: fixed;
-    top: 12%;
-    left: 2%;
     font-size: 16px;   
     border: none;
     border-radius: 10px;
@@ -48,12 +77,21 @@ body{
 
 .buscar:hover{
     border: none;
-    background-color: #ECF4F7 ;
-    color: #000;
+    color: rgb(0, 0, 0);
     transition: 300ms; 
 }
 
 main{
-    position: absolute;
-    top: 130px;
+    display: flex;
+    gap: 5px;
+    //flex-direction: column;
+    //align-items: center;
+    margin: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main > * {
+    display: flex;
+    flex: 0 1 33%;
 }

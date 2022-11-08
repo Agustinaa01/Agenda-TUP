@@ -1,9 +1,17 @@
 
 <!-- <app-FakeContacts ></app-FakeContacts> -->
-<body>
-    <h1>Contactos</h1>
-    <input class= "submit" [routerLink] = "['/login']" type="submit" value="Cerrar Sesion">
+<div class="header">
+    <div class="arriba">
+        <div class="arriba-center">
+            <h1>Contactos</h1>
+        </div>
+        <div class="arriba-right">
+            <input class= "submit" [routerLink] = "['/login']" type="submit" value="Cerrar Sesion">
+        </div>
+    </div>
     <input class= "buscar" type="search" name = "Buscar" placeholder= "Buscar">
+</div>
+<body>
     <main id="contactos">
         <app-contact-card
             *ngFor="let contact of contactsData"
@@ -12,4 +20,7 @@
         </app-contact-card>
     </main>
 </body>
+<footer>
+    
+</footer>
 
